@@ -24,7 +24,7 @@ df[' Label'] = df[' Label'].map(encoding)
 
 performance = []
 
-for features in tqdm(range(1,41), desc="ANOVA Feature Selection"):
+for features in tqdm(range(1,44), desc="ANOVA Feature Selection"):
     X = df.drop(columns=[' Label'])
     y = df[' Label']
 

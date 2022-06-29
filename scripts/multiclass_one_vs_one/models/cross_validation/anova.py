@@ -18,7 +18,7 @@ df = pd.read_csv(root + "datasets/multiclass/processed/CICDDoS_corr.csv", index_
 
 performance = []
 
-for features in tqdm(range(1,39), desc="ANOVA Feature Selection"):
+for features in tqdm(range(1,41), desc="ANOVA Feature Selection"):
     X = df.drop(columns=[' Label'])
     y = df[' Label']
 

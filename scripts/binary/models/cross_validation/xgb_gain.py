@@ -23,7 +23,7 @@ df[' Label'] = df[' Label'].map(encoding)
 
 performance = []
 
-for features in tqdm(range(1,41), desc="Embedded (XGBoost) Feature Selection"):
+for features in tqdm(range(1,44), desc="Embedded (XGBoost) Feature Selection"):
     X = df.drop(columns=[' Label'])
     y = df[' Label']
 
