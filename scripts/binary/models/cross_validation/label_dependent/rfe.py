@@ -26,7 +26,7 @@ performance = []
 
 max_features = int(sys.argv[2]) + 1
 
-for features in tqdm(range(1,44), desc="RFE Feature Selection"):
+for features in tqdm(range(1,max_features), desc="RFE Feature Selection"):
     X = df.drop(columns=[' Label'])
     y = df[' Label']
 
